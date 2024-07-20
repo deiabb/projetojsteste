@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <title>Carrinho de Compras - Bebidas a Porta</title>
+</head>
+<body>
+  <header class="cabecalho">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudoNavbarSuportado" aria-controls="conteudoNavbarSuportado" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <a href="./index.html"><img src="./img/logo.png" alt="Voltar para a Home" height="35px" width="35px"></a>
+          <form class="form__pesquisar form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" />
+            <button class="button__pesquisar" type="submit">Pesquisar</button>
+          </form>
+        </div>
+      </nav>
+  </header>
+
+  <main class="container adm-container mt-5">
+    <h1>Carrinho de Compras</h1>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Imagem</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Valor</th>
+          <th scope="col">Quantidade</th>
+          <th scope="col">Ação</th>
+        </tr>
+      </thead>
+      <tbody id="listaCarrinho" class="adm-table-body"></tbody>
+    </table>
+    <div class="total-container">
+      <h3>Total: R$ <span id="totalValor">0.00</span></h3>
+    </div>
+  </main>
+  <script src="./script.js"></script>
+  <script src="./carrinho.js"></script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+[
+    {
+        "marca": "Brahma",
+        "categoria": "cerveja", 
+        "origem": "Brasil",
+        "tipo": "Pilsen",
+        "preco": 3.1,
+        "peso": 350,
+        "img": "./img/brahma_lata.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Brahma",
+        "categoria": "cerveja",
+        "origem": "Brasil",
+        "tipo": "Pilsen",
+        "preco": 4.79,
+        "peso": 355,
+        "img": "./img/brahma_ln.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Corona",
+        "categoria": "cerveja",
+        "origem": "México",
+        "tipo": "American Lager",
+        "preco": 5.99,
+        "peso": 330,
+        "img": "./img/corona_ln.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Artarctica",
+        "categoria": "cerveja",
+        "origem": "Brasil",
+        "tipo": "Pilsen",
+        "preco": 3.1,
+        "peso": 350,
+        "img": "./img/antartica_lata.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Antarctica",
+        "categoria": "cerveja",
+        "origem": "Brasil",
+        "tipo": "Pilsen",
+        "preco": 4.79,
+        "peso": 355,
+        "img": "./img/antartica_ln.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Spaten",
+        "categoria": "cerveja",
+        "origem": "Alemanha",
+        "tipo": "Munich Helles",
+        "preco": 5.99,
+        "peso": 355,
+        "img": "./img/spaten_lata.jpeg",
+        "qnt": 0
+    },
+    {
+        "marca": "Spaten",
+        "categoria": "cerveja",
+        "origem": "Alemanha",
+        "tipo": "Munich Helles",
+        "preco": 8.89,
+        "peso": 600,
+        "img": "./img/spaten_600.jpeg",
+        "qnt": 0
+    },
+    {
+        "marca": "Chac Chac",
+        "categoria": "vinho",
+        "origem": "Argentina",
+        "tipo": "Sauvignon Blanc",
+        "preco": 40.99,
+        "peso": 750,
+        "img": "./img/chacchac_souvignon.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Chac Chac",
+        "categoria": "vinho",
+        "origem": "Argentina",
+        "tipo": "Tinto Malbec",
+        "preco": 40.99,
+        "peso": 750,
+        "img": "./img/chacchac_tinto.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Trapiche",
+        "categoria": "vinho",
+        "origem": "Argentina",
+        "tipo": "Tinto Merlot",
+        "preco": 51.99,
+        "peso": 750,
+        "img": "./img/trapiche_tinto.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Periquita",
+        "categoria": "vinho",
+        "origem": "Portugal",
+        "tipo": "Rosé Touriga Nacional",
+        "preco": 69.99,
+        "peso": 750,
+        "img": "./img/periquita_rose.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Periquita",
+        "categoria": "vinho",
+        "origem": "Portugal",
+        "tipo": "Tinto Seco",
+        "preco": 79.99,
+        "peso": 750,
+        "img": "./img/periquita_seco.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Concha Y Toro",
+        "categoria": "vinho",
+        "origem": "Chile",
+        "tipo": "Tinto Carménère Reservado",
+        "preco": 35.99,
+        "peso": 750,
+        "img": "./img/conchaytoro_carmenere.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Santa Helena",
+        "categoria": "vinho",
+        "origem": "Chile",
+        "tipo": "Rosé Reservado Cabernet Sauvignon",
+        "preco": 41.19,
+        "peso": 750,
+        "img": "./img/santahelena_rose.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Salton",
+        "categoria": "vinho",
+        "origem": "Brasil",
+        "tipo": "Espumante Brut",
+        "preco": 43.99,
+        "peso": 750,
+        "img": "./img/salton_brute.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Salton",
+        "categoria": "vinho",
+        "origem": "Brasil",
+        "tipo": "Espumante Moscatel",
+        "preco": 43.99,
+        "peso": 750,
+        "img": "./img/salton_moscatel.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Coca Cola",
+        "categoria": "refrigerante",
+        "sabor": "Canela",
+        "preco": 7.5,
+        "peso": 2,
+        "img": "./img/cocacola.jpeg",
+        "qnt": 0
+    },
+    {
+        "marca": "Guaraná Antarctica",
+        "categoria": "refrigerante",
+        "sabor": "Guaraná",
+        "preco": 8,
+        "peso": 2,
+        "img": "./img/guarana.jpeg",
+        "qnt": 0
+    },
+    {
+        "marca": "Pepsi",
+        "categoria": "refrigerante",
+        "sabor": "Canela",
+        "preco": 7.7,
+        "peso": 2,
+        "img": "./img/pepsi_lata.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Fanta",
+        "categoria": "refrigerante",
+        "sabor": "Uva",
+        "preco": 7,
+        "peso": 2,
+        "img": "./img/fanta_uva.jpeg",
+        "qnt": 0
+    },
+    {
+        "marca": "Fanta",
+        "categoria": "refrigerante",
+        "sabor": "Laranja",
+        "preco": 7,
+        "peso": 2,
+        "img": "./img/fanta_laranja.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Sprite",
+        "categoria": "refrigerante",
+        "sabor": "Limão",
+        "preco": 5,
+        "peso": 2,
+        "img": "./img/sprite_lata.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Kuat",
+        "categoria": "refrigerante",
+        "sabor": "Guaraná",
+        "preco": 5.5,
+        "peso": 2,
+        "img": "./img/kuat_lata.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Crystal",
+        "categoria": "agua",    
+        "sabor": "Mineral",
+        "preco": 2,
+        "peso": 350,
+        "img": "./img/crystal_mineral.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Ibirá",
+        "categoria": "agua",
+        "sabor": "Mineral",
+        "preco": 1.5,
+        "peso": 500,
+        "img": "./img/ibira_mineral.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Minalba",
+        "categoria": "agua",
+        "sabor": "Mineral",
+        "preco": 1.65,
+        "peso": 500,
+        "img": "./img/minalba_mineral.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Cristal",
+        "categoria": "agua",
+        "sabor": "Água com gás",
+        "preco": 2.5,
+        "peso": 500,
+        "img": "./img/crystal_gas.png",
+        "qnt": 0
+    },
+    {
+        "marca": "Bioleve",
+        "categoria": "agua",
+        "sabor": "Água com gás",
+        "preco": 2.75,
+        "peso": 500,
+        "img": "./img/bioleve_gas.png",
+        "qnt": 0
+    }
+]

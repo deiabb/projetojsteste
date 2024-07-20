@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <title>Bebidas a Porta</title>
+   
+  </head>
+  <body id="principal" class="principal">
+    <header class="cabecalho">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#"
+          ></a>
+          <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#conteudoNavbarSuportado"
+          aria-controls="conteudoNavbarSuportado"
+          aria-expanded="false"
+          aria-label="Alterna navegação"
+          >
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="conteudoNavbarSuportado">
+          <form class="form__pesquisar form-inline">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Pesquisar"
+              aria-label="Pesquisar"
+            />
+            <button class="button__pesquisar" type="submit">
+              Pesquisar
+            </button>
+          </form>
+          <section class="carrinho">
+            <img class="carrinho-img" src="./img/shopping-cart.svg" alt="">
+            <h5>Carrinho de Compras</h5>
+            <div id="valor-total">Valor Total: R$ 0,00</div>
+            <button class="button__pesquisar"><a href="./carrinho.html">Ver Carrinho</a></button>
+          </section>
+        </div>
+        </nav>
+        <section class="filtros__lista">
+          <img class="logo" src="./img/logo.png" alt=""
+        />
+          <h1 class="titulo">Bebidas 
+          <br>à Porta</h1>
+          <ul class="container__filtros_card">
+            
+            <li class="filtros_card" id="categoria-todas">Todas<img src="./img/todas.png" alt="filtro para todas as bebidas"></li>
+            <li class="filtros_card" id="categoria-cerveja">Cervejas <img src="./img/cerveja2.png" alt="filtro para cerveja"></li>
+            <li class="filtros_card" id="categoria-vinho">Vinhos <img src="./img/vinho.png" alt="filtro para vinho"></li></li>
+            <li class="filtros_card" id="categoria-refrigerante">
+            Refrigerantes <img src="./img/refrigerante2.png" alt="filtro para refrigerante"></li>
+          </li>
+            <li class="filtros_card" id="categoria-agua">Águas <img src="./img/garrafa-de-agua.png" alt="filtro para agua"></li></li>
+          </ul>
+      </section>
+
+    </header>
+   
+    <section class="produtos">
+      <!--aqui ficam os cards gerados pela function-->
+    </section>
+    <button id="simulador">Clique para simular quantidades >
+    </button>
+    
+      <section class="container mt-5 modal">
+      <h2>Simulador de Quantidade de Bebidas</h2>
+      <form id="simuladorForm">
+        <div class="form-group">
+          <label for="numeroCriancas">Número de Crianças:</label>
+          <input type="number" class="form-control" id="numeroCriancas" min="0" value="0">
+        </div>
+        <div class="form-group">
+          <label for="numeroAdultos">Número de Adultos:</label>
+          <input type="number" class="form-control" id="numeroAdultos" min="0" value="0">
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="incluirCerveja">
+          <label class="form-check-label" for="incluirCerveja">Vai ter Cerveja</label>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="incluirVinho">
+          <label class="form-check-label" for="incluirVinho">Vai ter Vinho</label>
+        </div>
+        <button type="button" class="btn btn-primary mt-3" onclick="calcularBebidas()">Calcular</button>
+      </form>
+      <div id="resultadoSimulacao" class="mt-4"></div>
+    </section>
+    <section class="footer">
+      <a href="https://www.flaticon.com/br/icones-gratis/alcool" title="álcool ícones">Ícones criados por wanicon - Flaticon</a>
+    </section>
+
+    <script src="./script.js"></script>
+    <script src="./cards.js"></script>
+    <script src="./filtro.js"></script>
+    <script src="./simulador.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
