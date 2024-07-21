@@ -1,6 +1,8 @@
 function gerarCards(categoria = '') {
     const produtosContainer = document.querySelector('.produtos');
     produtosContainer.innerHTML = '';
+
+    const quantidadesSalvas = JSON.parse(localStorage.getItem('quantidades')) || {};
   
     bebidasDisponiveis.forEach((bebida, index) => {
       if (categoria === '' || bebida.categoria === categoria) {
@@ -27,7 +29,7 @@ function gerarCards(categoria = '') {
   
         const contador = document.createElement('p');
         contador.className = 'contador';
-        contador.textContent = '0';
+        contador.textContent = quantidadesSalvas[index] || '0';
   
         const addButton = document.createElement('button');
         addButton.textContent = '+';
@@ -54,8 +56,13 @@ function gerarCards(categoria = '') {
     contadorValor += valor;
     if (contadorValor < 0) contadorValor = 0;
     contador.textContent = contadorValor;
+
+    const quantidades = JSON.parse(localStorage.getItem('quantidades')) || {};
+    quantidades[index] = contadorValor;
+    localStorage.setItem('quantidades', JSON.stringify(quantidades));
   }
   
+
   function adicionarItemAoCarrinho(index) {
     const item = bebidasDisponiveis[index];
     const itemExistente = carrinho.find(carrinhoItem => carrinhoItem.marca === item.marca && carrinhoItem.tipo === item.tipo && carrinhoItem.sabor === item.sabor);

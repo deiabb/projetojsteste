@@ -2,6 +2,14 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: #0a5483;
 }
+
+a:hover {
+    text-decoration: none;
+}
+a:visited {
+    color: #f8f8ec;    
+}
+
 .principal {
     height: 100vh;
     display: grid;
@@ -24,7 +32,8 @@ body {
     max-height: 7vh;
     
 }
-.button__pesquisar {
+
+.btn__basico {
     width: 120px;
     height: 30px;
     background-color: #0a5483;
@@ -32,11 +41,16 @@ body {
     border: 0;
     border-radius: 8px;
 }
+
 .carrinho {
     display: flex;
     flex-direction: row;
     font-size: 0.9rem;
     align-items: center;
+    margin-left: 22rem;
+}
+.carrinho .btn__basico {
+    margin-left: 1.5rem;
 }
 
 .carrinho-img {
@@ -217,10 +231,10 @@ body {
     position: fixed;
     border-radius: 30px;
     right: 0;
-    background: linear-gradient(90deg, rgba(0,215,245,1) 31%, rgba(9,113,121,0.8855742125951943) 100%, rgb(30, 87, 103) 100%);
+    background: linear-gradient(90deg, #aedd2b 20%, #47b6f1 70%, rgb(3, 53, 67) 100%);
     width: 200px;
     height: 50px;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: #dff0d8;
     box-shadow: 10px 10px 52px 16px rgba(49,156,143,0.46);
 -webkit-box-shadow: 10px 10px 52px 16px rgba(49,156,143,0.46);
